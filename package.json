@@ -4,7 +4,20 @@
   "main": "index.js",
   "author": "Kluddizz <flhansen.93@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit --verbose"
+  },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
     "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
   }
 }
