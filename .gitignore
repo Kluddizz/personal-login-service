@@ -3,3 +3,7 @@
 
 # configuration files
 /postgres.json
+
+# keys
+*.key
+*.pub
