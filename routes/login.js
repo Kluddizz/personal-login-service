@@ -11,7 +11,7 @@ router.post(
     const query = await db.query(
       `
       SELECT *
-      FROM user
+      FROM user_info
       WHERE username = $1
             AND password = crypt($2, password);
       `,
