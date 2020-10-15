@@ -27,6 +27,14 @@ app.use(cors());
 
 app.use((err, req, res, next) => {
   if (err.name === "UnauthorizedError") {
+    const ip =
+      req.headers["x-forwarded-for"] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress ||
+      req.connection.socket.remoteAddress;
+
+    log(`authorization failed for ${ip}`, "error");
+
     res.status(403).json({
       status: 403,
       message: "Unauthorized",
