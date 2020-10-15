@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const helmet = require("helmet");
 const express = require("express");
 const cors = require("cors");
-const log = require("./log");
+const log = require("@kluddizz/log");
 
 const app = express();
 const port = process.env.PORT || 5000;

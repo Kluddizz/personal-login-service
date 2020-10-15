@@ -9,6 +9,7 @@
     "test": "jest --runInBand --detectOpenHandles --forceExit --verbose"
   },
   "dependencies": {
+    "@kluddizz/log": "^1.0.0",
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
